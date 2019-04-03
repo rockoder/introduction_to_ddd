@@ -1,0 +1,25 @@
+# Steps for preparing the presentation
+
+- fork https://github.com/hakimel/reveal.js
+- rename your repo to presentation title
+- make basic changes in:
+    - index.html - change title and reference to md file
+    - create <presentation>.md (ex: ddd_slides.md)
+        - easier to create a copy from your existing presentation (ex: docker_slides.md)
+        - make changes to first slide
+- at this point follow the steps in Full Setup of Reveal.js (https://github.com/hakimel/reveal.js#full-setup)
+    - start the server and check if the changes in the first slide are visible in browse at http://localhost:8000/
+    - press s to enter presentation mode and see your authors notes
+- create dir images/ to put your images
+- you are all set
+
+# Two Column Slide
+- wrote css/custom.css for two column slide
+- div with class my-small-font does not work with fragment. to make is work add my-small-font along with fragment class. ex:
+    - Addison Wesley. 2003.<!-- .element: class="fragment my-small-font" data-fragment-index="2" -->
+
+# To enable the presentation on github pages and rockoder.com
+    - go to repo settings on github
+    - in GitHub Pages section select the branch to be publishes (usually master)
+    - refresh the settings
+    - refresh the GitHub pages page. ex: http://www.rockoder.com/introduction_to_ddd/
